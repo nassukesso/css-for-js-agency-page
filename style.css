@@ -10,3 +10,90 @@ body {
 }
 
 /* Add styles here! */
+:root {
+  --primary: hsl(160deg, 100%, 30%);
+  --secondary-light: hsl(45deg, 100%, 50%);
+  --secondary-dark: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%);
+  --very-dark: hsl(0deg, 0%, 10%);
+  --dark: hsl(0deg, 0%, 30%);
+  --medium: hsl(0deg, 0%, 40%);
+  --light: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --p: 1.25rem;
+
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-sm: 1.5rem;
+  --space-m: 2rem;
+  --space-ml: 3rem;
+  --space-l: 4rem;
+  --space-xl: 6rem;
+  --space-xxl: 8rem;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+p {
+  font-size: var(--p);
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+strong {
+  color: var(--primary);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding-block: var(--space-m);
+  border-bottom: solid var(--space-xs) var(--light);
+}
+
+.intro-chunk {
+  max-width: 52ch;
+  padding-inline: var(--space-sm);
+}
+
+.title {
+  padding-block: var(--space-m);
+}
+
+main {
+  padding-block: var(--space-l);
+  background-color: var(--medium);
+}
+
+.indented-heading {
+  margin-block: 0;
+  padding-block: var(--space-s);
+  padding-inline: var(--space-m);
+  background-color: var(--secondary-light);
+  border-bottom: solid var(--space-xs) var(--secondary-dark);
+  width: fit-content;
+  margin-left: -2rem;
+}
+
+.card {
+  padding-inline: var(--space-sm);
+  padding-block-start: var(--space-xs);
+  padding-block-end: var(--space-xs);
+  background-color: var(--white);
+  border-bottom: solid var(--space-xs) var(--light);
+}
